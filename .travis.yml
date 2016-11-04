@@ -19,7 +19,7 @@ env:
     - SITE_URL: https://jaapio.github.io/dummy
     - GH_USER_NAME: "Jaap van Otterdijk "
     - GH_USER_EMAIL: jaap@polderknowledge.nl
-    - GH_REF: github.com:jaapio/dummy.git
+    - GH_REF: github.com/jaapio/dummy.git
     - secure: "P47t3wFzJLn7pnefJ64EpH42rIKwJSPv4FB0VV6BCXyasryM83ipTVanbdssCCcSzYOMbry7F1SpH3VFReoRM6x5Y7QJLOsVpZ0BLyCTJ31YmtwSuvuveUeKo7yvr1Y6yGSL9OmaixLXdmeMPs9knZY9cdblvp0I+d1GEHvhlQAypLOUJCluKh/snBeDVD+ErVAl5qAyquTm6H5B8bx0XJL6uKxCm2472u3h+KVd5Mot02RzStQEE8yti/2O0bn289BjAU85TlpIXNzaOKtCTNFuD7DNtaz66kDgwQLMCN7/wk2SOIqBgp4vl1LBx8L3vaFASIJclCztj6L1Sh1ezNNanGBwWGBa6jqpy//QsLkknEDHjeLTgPp+E/jr6jmai7nacRoTg89iexITT26hKCSVvjreJ7U7xf5UBTpZu7rguoXCmU23Y5qxZwUA6mimRnQSQYmFc2/tnsLppAD7jde5ZaUHHo7iMkoGPDlPr/iHnmRP4yrB7u1rdukfniHAkySE/u1IPM09MLtC5jQbe1SWCRWpXWLgbsVUu7Zvm1wPqvOsOaCjBBFXLwd3vXlNyM4bxRKFyRZZm9rptyC0ztr2P9IcKITuoh00x8XzivpGq0kVOdnclgctpbWNRDt6M5gryM8yJr6clQM2aEMMN2yo27jyAriBgpK2PfSf4Fg="
 
 script:
