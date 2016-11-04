@@ -28,3 +28,4 @@ script:
   - ./theme-installer.sh
   - ./mkdocs-theme/deploy.sh
   - ls -R
+  - echo "Done";
