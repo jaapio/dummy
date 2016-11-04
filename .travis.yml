@@ -27,4 +27,4 @@ script:
   - chmod 755 theme-installer.sh
   - ./theme-installer.sh
   - ./mkdocs-theme/deploy.sh
-  - ls
+  - ls -R
