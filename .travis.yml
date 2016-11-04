@@ -1,0 +1,34 @@
+language: php
+
+php:
+  - 5.6
+
+# This triggers builds to run on the new TravisCI infrastructure.
+# See: http://docs.travis-ci.com/user/workers/container-based-infrastructure/
+sudo: false
+
+## Cache composer
+cache:
+  directories:
+  - "$HOME/.composer/cache"
+  - "$HOME/.local"
+  - mkdocs-theme
+
+env:
+  global:
+    - SITE_URL: https://jaapio.github.io/dummy
+    - GH_USER_NAME: "Jaap van Otterdijk "
+    - GH_USER_EMAIL: jaap@polderknowledge.nl
+    - GH_REF: git@github.com:jaapio/dummy.git
+    - secure: qebcDvoIxBPMxSYG3EIYSfI1lNYs/voRUb9i7jujGb0XmCcDJEZ9nN9P9yfpABUYG0nkJd8RIar/S8yS0iVU3UkT66gydb9lXrjmb761xqad/+7JvuCMFr74977KB1jjQzsujGmtMgV5fthGB8LUTNJkitgCzR8beDdBMkxYo/oCg+UgX+VumsJhTaKUQbroEan5o3vuntp63CF3Hj9q36pjMjZYOLclDxT+guTs2e8AT3NZAHRepK/Xtov8OtMQDu02K2nX+P2HKdSuTHjzr3k+4RO1d9GQZfh2/EdmAWyki+q3zZB6adZARNG99SRm9SMfFTdkCfSq5ysBdxJOMIwx9nJak22Z9+RGHyIKVpKC96Jpplne0sIozjg8b5g8gQ4yOUh6/ntoKBxgTSdzn4DiuFIRuVQb9ppfasGRNvaNu7/+apjjljF33p41n79gtU8IKwnhBFUyHgcJKrxitbIeNuPEkpYzhqKP5lvLHmOQLr4fy5q0d8TLT48scFroou1kCyBfJwv7EvLY90pT3s+bHzL5deKYInu/7Q+lgciSOU9LwLUwhhSll4NXQsOoyULROvF0mOr7vmcrmbsaDj+9URutueuWIxWQT+BVEbAnvG6XJPaSFD2wryBext6IiEbdjOd4I+GrMgkRMBpcHZYv7OcZtPtAbdsl/4vJPXY=
+
+
+matrix:
+  include:
+  - php: 5.6
+
+script:
+  - wget -O theme-installer.sh "https://raw.githubusercontent.com/polderknowledge/mkdocs-theme/master/theme-installer.sh"
+  - chmod 755 theme-installer.sh
+  - ./theme-installer.sh
+  - ./mkdocs-theme/deploy.sh
