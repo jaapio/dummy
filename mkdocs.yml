@@ -1,9 +1,0 @@
-docs_dir: docs/book
-site_dir: docs/html
-pages:
-    - index.md
-    - Installation: installation.md
-site_name: dummy
-site_description: Dummy
-repo_url: 'https://github.com/jaapio/dummy'
-copyright: 'Copyright (c) 2002-2016 <a href="https://www.polderknowledge.com/">Polder Knowledge</a>'
